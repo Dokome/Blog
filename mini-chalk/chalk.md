@@ -189,7 +189,7 @@ const applyStyle = (self, string) => {
 
 ### 简易实现
 
-> Github https://github.com/Dokome/Blog/mini-chalk
+> Github https://github.com/Dokome/Blog/tree/main/mini-chalk
 
 首先我们的文件入口需要导出一个 chalk 函数，且可以像之前的 builder 一样进入到 styles 的 get 函数中以达到链式调用的效果。
 
