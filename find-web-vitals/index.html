@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Hello Dokom</div>
+    <script type="module">
+      import {
+        onFCP,
+        onLCP,
+      } from "./node_modules/web-vitals/dist/web-vitals.js";
+
+      const logger = (data) => console.log(JSON.stringify(data, null, 2));
+
+      onFCP(logger);
+      onLCP(logger);
+
+    </script>
+  </body>
+</html>
